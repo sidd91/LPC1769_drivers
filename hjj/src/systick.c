@@ -41,6 +41,8 @@ uint8_t SYSTICK_init_with_interrupts()
 	return 1;
 }
 
+
+
 void Systick_Wait10ms(uint32_t delayUnits)
 {
 	if((STCTRL & (3 << 0)) == 0x1)         //check if the interrupt is off and the systick is enable

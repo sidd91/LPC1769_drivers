@@ -12,9 +12,13 @@
 
 static PIN p1;
 
+
+
 //array of pointers to
 //will this take small space than LPC_GPIO_TypeDef gpio_config[5];
 static LPC_GPIO_TypeDef *gpio_config[5] = {LPC_GPIO0, LPC_GPIO1, LPC_GPIO2, LPC_GPIO3, LPC_GPIO4};
+
+void set_mode(mode);
 
 void init_as_gpio(uint8_t pin){
 
